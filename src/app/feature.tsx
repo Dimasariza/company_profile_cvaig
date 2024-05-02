@@ -1,13 +1,9 @@
 "use client";
 
-import React from "react";
+// import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
   BoltIcon
 } from "@heroicons/react/24/solid";
 import { MdOutlineFlashAuto, MdSafetyCheck } from "react-icons/md";

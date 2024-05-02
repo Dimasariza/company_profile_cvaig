@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+// import React from "react";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
 import { UserIcon } from "@heroicons/react/24/solid";
 import TestimonialCard from "../components/testimonial-card";
-
+import type { TypographyStylesType } from "@material-tailwind/react";
 
 const TESTIMONIALS = [
   {
@@ -29,6 +29,7 @@ const TESTIMONIALS = [
     img: "/image/avatar3.jpg",
   },
 ];
+
 
 export function Testimonials() {
   return (

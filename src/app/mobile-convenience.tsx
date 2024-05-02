@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+// import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
 import { Typography, Card, CardBody } from "@material-tailwind/react";

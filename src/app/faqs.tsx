@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+// import React from "react";
 import { Typography, Card } from "@material-tailwind/react";
 
 const FAQS = [
