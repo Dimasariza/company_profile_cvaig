@@ -3,7 +3,8 @@
 // import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody, Carousel } from "@material-tailwind/react";
+import { Typography, Card, CardBody, Carousel, Button } from "@material-tailwind/react";
+import Link from 'next/link';
 
 const OPTIONS = [
   {
@@ -25,13 +26,18 @@ const OPTIONS = [
 ];
 
 export function Projects() {
+  function handleAllProjects() {
+    console.log("Handle projects")
+  }
+
   return (
     <section className="py-20 px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
         <Carousel className="rounded-xl" transition={{ duration: 2 }} autoplay loop>
           { 
-            [1,2,3,4,5,6,7,8,9,10].map(image => (
+            [1,2,3,4,5,6,7,8,9,10].map((image, id) => (
               <img
+                key={id}
                 src={"./projects/" + image + ".jpg"}
                 alt={"projects" + image}
                 className="h-full w-full object-cover"
@@ -57,6 +63,10 @@ export function Projects() {
               </InfoCard>
             ))}
           </div>
+          
+          <Link href={"/projects"}>
+            <Button variant="gradient" color="green" onClick={handleAllProjects}>See All Projects</Button>
+          </Link>
         </div>
       </div>
     </section>

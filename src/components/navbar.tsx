@@ -60,8 +60,8 @@ export function Navbar() {
   return (
     <MTNavbar
       fullWidth
-      shadow={false}
-      blurred={false}
+      // shadow
+      // blurred
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
     >
