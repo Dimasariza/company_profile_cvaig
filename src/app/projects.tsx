@@ -7,12 +7,12 @@ import { Typography, Card, CardBody, Carousel } from "@material-tailwind/react";
 
 const OPTIONS = [
   {
-    title: "100",
-    description: "Learning Courses",
+    title: "50+",
+    description: "Ship Maintenance",
   },
   {
-    title: "500+",
-    description: "Expert Instructors",
+    title: "100+",
+    description: "Maintenance Projects",
   },
   {
     title: "24/7",
@@ -29,7 +29,7 @@ export function Projects() {
     <section className="py-20 px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
         <Carousel className="rounded-xl" transition={{ duration: 2 }} autoplay loop>
-          {
+          { 
             [1,2,3,4,5,6,7,8,9,10].map(image => (
               <img
                 src={"./projects/" + image + ".jpg"}
@@ -47,7 +47,7 @@ export function Projects() {
             variant="lead"
             className="mb-5 px-4 text-left  text-xl !text-gray-500 lg:px-0  "
           >
-            Access your learning materials on the go.
+            We have experience in handling ship problems.
           </Typography>
 
           <div className="col-span-2 grid gap-5 grid-cols-2 ">
