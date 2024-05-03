@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+import logo from "../../public/logos/Logo AIG.png"
 
 export function FixedPlugin() {
   return (
@@ -15,7 +16,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Material Tailwind"
-          src={process.env["IMAGE_URL"] + "/logos/Logo AIG.png"}
+          src={"/logos/Logo AIG.png"}
         />{" "}
         Anugerah Inti Gemilang
       </Button>
