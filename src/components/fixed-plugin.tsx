@@ -16,7 +16,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Material Tailwind"
-          src={"/logos/Logo AIG.png"}
+          src={logo}
         />{" "}
         Anugerah Inti Gemilang
       </Button>
