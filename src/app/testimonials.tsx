@@ -18,7 +18,7 @@ const TESTIMONIALS = [
     feedback:
       "It understood my unique needs and delivered a tailored solution promptly. Their customer support is top-notch, and I appreciate their commitment.",
     client: "Dok Pantai Lamongan",
-    title: "MARKETING @ PT DPL.",
+    title: "Marketing @ PT DPL.",
     img: "./clients/DPL.jpg",
   },
   {
