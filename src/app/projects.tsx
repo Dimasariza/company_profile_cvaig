@@ -3,7 +3,7 @@
 // import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import { Typography, Card, CardBody, Carousel } from "@material-tailwind/react";
 
 const OPTIONS = [
   {
@@ -24,20 +24,24 @@ const OPTIONS = [
   },
 ];
 
-export function MobileConvenience() {
+export function Projects() {
   return (
     <section className="py-20 px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
-        {/* <Image
-          width={256}
-          height={256}
-          src="/image/iphone.png"
-          className="col-span-1 w-1/2 mx-auto lg:w-10/12"
-          alt="iphone-photo"
-        /> */}
+        <Carousel className="rounded-xl" transition={{ duration: 2 }} autoplay loop>
+          {
+            [1,2,3,4,5,6,7,8,9,10].map(image => (
+              <img
+                src={"./projects/" + image + ".jpg"}
+                alt={"projects" + image}
+                className="h-full w-full object-cover"
+              />
+            ))
+          }
+        </Carousel>
         <div className="col-span-1 mx-auto max-w-lg px-4 lg:px-0">
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            Mobile Convenience
+            Projects
           </Typography>
           <Typography
             variant="lead"
@@ -58,4 +62,4 @@ export function MobileConvenience() {
     </section>
   );
 }
-export default MobileConvenience;
+export default Projects;

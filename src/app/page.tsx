@@ -5,7 +5,7 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import VideoIntro from "./video-intro";
 import Feature from "./feature";
-import MobileConvenience from "./mobile-convenience";
+import MobileConvenience from "./projects";
 import Testimonials from "./testimonials";
 import Faqs from "./faqs";
 
