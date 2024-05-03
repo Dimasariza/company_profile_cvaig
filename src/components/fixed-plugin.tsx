@@ -3,9 +3,6 @@ import Image from "next/image";
 import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
-  const image = process.env.IMAGE_URL
-  console.log(process.env["IMAGE_URL"])
-
   return (
     <a href="https://www.linkedin.com/in/alex-wahyudi" target="_blank">
       <Button
@@ -18,7 +15,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="Material Tailwind"
-          src={ "/logos/Logo AIG.png"}
+          src={process.env["IMAGE_URL"] + "/logos/Logo AIG.png"}
         />{" "}
         Anugerah Inti Gemilang
       </Button>
