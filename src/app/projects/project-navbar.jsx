@@ -75,14 +75,14 @@ export function ProjectNavbar() {
   return (
     <Navbar fullWidth className="mx-auto max-w-screen px-6 py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Link href={"/"}>
-            <Typography
-            variant="h6"
-            className="mr-4 cursor-pointer py-1.5"
-            >
+        <Typography
+        variant="h6"
+        className="mr-4 cursor-pointer py-1.5"
+        >
+          <Link href={"/"}>
                 Anugerah Inti Gemilang
-            </Typography>
-        </Link>
+          </Link>
+        </Typography>
         {/* <div className="hidden lg:block">
           <NavList />
         </div> */}
