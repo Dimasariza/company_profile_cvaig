@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button, Typography } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import ship from "../../public/image/top view.png";
 
 function Hero() {

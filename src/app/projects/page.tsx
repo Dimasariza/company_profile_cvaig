@@ -7,7 +7,7 @@ export default function ProjectPage() {
   return (
     <>
       <ProjectNavbar />
-      <SideBarProject />
+      <SideBarProject />  
       {/* <Footer /> */}
     </>
   );

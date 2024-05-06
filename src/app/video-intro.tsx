@@ -2,30 +2,31 @@
 
 import React from "react";
 // import Image from "next/image";
-import { IconButton } from "@material-tailwind/react";
-import { PlayIcon } from "@heroicons/react/24/outline";
+import { Typography } from "@material-tailwind/react";
+import { Suspense } from 'react'
 
 export function VideoIntro() {
   return (
     <div className="p-8">
-      <div className="w-full container px-5 overflow-hidden rounded-xl relative mx-auto mt-20 max-w-6xl ">
-        <h1>AIG Video</h1>
-        <div>
-
+      <div className="w-full bg-black/25 container overflow-hidden rounded-xl relative mx-auto mt-20 max-w-6xl grid place-items-center">
+        <Typography color="blue-gray" className="pb-6 text-center m-5 col-12" variant="h4">
+          Footage of our Project
+        </Typography>
+        <div className="w-full m-5 col-12" 
+          style={{  
+          width: "280px",
+          overflow: "hidden",
+          height: "240px" }}
+        >
+          <Suspense>
+            <video width="1020" height="340" controls preload="none" autoPlay loop style={{
+              position: "relative",
+              bottom: "130px"
+            }}>
+              <source src="/video/aig.mp4" type="video/mp4" />
+            </video>
+          </Suspense>
         </div>
-        <div className="bg-black/25 z-10 absolute w-full h-full inset-0 rounded-xl" />
-        {/* <Image
-          width={768}
-          height={400}
-          src="/image/Background.png"
-          className="w-full object-cover scale-110 rounded-xl h-full"
-          alt=""
-        />
-        <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-10">
-          <IconButton color="white" className="rounded-full" size="lg">
-            <PlayIcon className="h-6 w-6" />
-          </IconButton>
-        </div> */}
       </div>
     </div>
   );

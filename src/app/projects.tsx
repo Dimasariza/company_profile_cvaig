@@ -26,9 +26,6 @@ const OPTIONS = [
 ];
 
 export function Projects() {
-  function handleAllProjects() {
-    console.log("Handle projects")
-  }
 
   return (
     <section className="py-20 px-8">
@@ -65,7 +62,7 @@ export function Projects() {
           </div>
           
           <Link href={"/projects"}>
-            <Button variant="gradient" color="green" onClick={handleAllProjects}>See All Projects</Button>
+            <Button variant="gradient" color="green">See All Projects</Button>
           </Link>
         </div>
       </div>
