@@ -3,7 +3,7 @@
 import React from "react";
 // import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import { Suspense } from 'react'
+import { Suspense } from 'react';
 
 export function VideoIntro() {
   return (
