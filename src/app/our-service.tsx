@@ -17,7 +17,7 @@ import { SiGoogleearthengine } from "react-icons/si";
 
 import FeatureCard from "../components/feature-card";
 
-const FEATURES = [
+const SERVICES = [
   {
     icon: BoltIcon,
     title: "Electric Maintenance",
@@ -92,7 +92,7 @@ const FEATURES = [
   },
 ];
 
-export function Features() {
+export function Services() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
@@ -110,11 +110,11 @@ export function Features() {
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
-        {FEATURES.map((props, idx) => (
+        {SERVICES.map((props, idx) => (
           <FeatureCard key={idx} {...props} />
         ))}
       </div>
     </section>
   );
 }
-export default Features;
+export default Services;

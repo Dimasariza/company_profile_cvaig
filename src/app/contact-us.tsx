@@ -1,38 +1,31 @@
 "use client";
 
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import { Typography, Card, CardBody, Input, Textarea, Button } from "@material-tailwind/react";
 import { BsTelephone } from "react-icons/bs";
+import { VscLocation } from "react-icons/vsc";
+import { MdOutlineMail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const FAQS = [
   {
-    title: "How do I get started?",
-    desc: "Getting started is easy! Simply [Provide a brief overview of the initial steps or link to a detailed guide].",
+    title: "Address",
+    desc: "Dukuh Kalikendal 41B Ds. Pradah Kalikendal Kec. Dukuh Pakis Kota Surabaya",
+    icon: <VscLocation size={100} className="m-5"/>
+  },
+  {
+    title: "Phone",
+    desc: "0813-2536-7342",
     icon: <BsTelephone size={100} className="m-5"/>
   },
   {
-    title: "Is there a free trial available?",
-    desc: "Yes, we offer a 30 days free trial so you can experience our mobile application with no commitment.",
-    icon: ""
+    title: "Whatsapp",
+    desc: "0813-2536-7342",
+    icon: <FaWhatsapp size={100} className="m-5"/>
   },
   {
-    title: "How can I upgrade my account?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
-    icon: ""
-  },
-  {
-    title: "Can I cancel my subscription anytime?",
-    desc: "Absolutely, you can cancel your subscription at any time with no questions asked. Your subscription will remain active until the end of the current billing cycle.",
-    icon: ""
-  },
-  {
-    title: "How can I upgrade my account to paid?",
-    desc: "To upgrade your account, log in and navigate to the [Upgrade Account] section in your dashboard. Follow the prompts to select your preferred plan.",
-    icon: ""
-  },
-  {
-    title: "What if I need help or have technical issues?",
-    desc: "Our dedicated support team is here to assist you. Reach out via [mention preferred support channels, e.g., live chat, email, or phone], and we'll get back to you promptly.",
-    icon: ""
+    title: "Email",
+    desc: "aintigemilang@gmail.com",
+    icon: <MdOutlineMail size={100} className="m-5"/>
   },
 ];
 
@@ -52,16 +45,18 @@ export function ContactUs() {
           </Typography>
         </div>
 
-        <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
+        <div className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {FAQS.map(({ title, desc, icon }) => (
             <Card key={title} shadow={false} color="transparent">
               <CardBody>  
-                {icon}
-                <Typography color="blue-gray" className="pb-6" variant="h4">
+                <div className="flex justify-center">
+                  {icon}
+                </div>
+                <Typography color="blue-gray" className="pb-6 text-center" variant="h4">
                   {title}
                 </Typography>
                 <div className="pt-2">
-                  <Typography className="font-normal !text-gray-500">
+                  <Typography className="font-normal !text-gray-500 text-center">
                     {desc}
                   </Typography>
                 </div>
@@ -69,6 +64,23 @@ export function ContactUs() {
             </Card>
           ))}
         </div>
+      </div>
+
+      <div className="w-full justify-center flex">
+        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
+          <div className="flex flex-col gap-6">
+            <Typography variant="h5" color="blue-gray" className="mb-4 text-center">
+              Get in Touch with Us
+            </Typography>
+            <Input label="Name" crossOrigin={undefined} className="p-2"/>
+            <Input label="Email" crossOrigin={undefined} className="p-2"/>
+            <Input label="Subject" crossOrigin={undefined} className="p-2"/>
+            <Textarea label="Message" className="p-2"/>
+            <Button className="mt-6" fullWidth color="green">
+              Send Message
+            </Button>
+          </div>
+        </form>
       </div>
     </section>
   );
