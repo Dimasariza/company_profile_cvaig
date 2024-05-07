@@ -98,7 +98,7 @@ function SideBarProject() {
   };
 
   return (
-    <Card className="h-[calc(100vh-5rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 mt-2">
+    <Card className="h-[calc(100vh-5rem)] w-80 max-w-[20rem] p-4 shadow-2xl mt-4 fixed top-14 left-1">
       <div className="mb-2 p-4">
         <Typography variant="h5" color="blue-gray">
           Projects
