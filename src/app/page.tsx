@@ -5,18 +5,20 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import VideoIntro from "./video-intro";
 import Feature from "./our-service";
-import MobileConvenience from "./projects";
+import Projects from "./projects";
 import Testimonials from "./testimonials";
 import Faqs from "./contact-us";
+import Products from "./products";
 
-export default function Campaign() {
+export default function CompanyProfile() {
   return (
     <>
       <Navbar />
       <Hero />
       <VideoIntro />
       <Feature />
-      <MobileConvenience />
+      <Projects />
+      <Products />
       <Testimonials />
       <Faqs />
       <Footer />

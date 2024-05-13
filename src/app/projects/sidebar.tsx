@@ -22,12 +22,8 @@ const datas = [
         projects : [
             {   
                 name : "KM Kendaga Nusantara V - Repair Safety Device AE3", 
-                image : []
+                image : "kendaga_nusantara"
             },
-            {   
-                name : "KM LOGISTIK NUSANTARA V - SAFETY DEVICE AE EMERGENCY", 
-                image : []
-            }
         ]
     },
     {
@@ -35,39 +31,39 @@ const datas = [
         projects : [
             {   
                 name : "MV hexen argo2 - Kontrol ME STBD", 
-                image : []
+                image : "hexen_argo"
             },
             {   
                 name : "MV KINTOKI - REPAIR MINTORING MAIN ENGINE", 
-                image : []
+                image : "kintoki_monitoring"
             },
             {   
                 name : "KP PULAU TIMOR - REPAIR SAFETY DEVICE AE1", 
-                image : []
+                image : "pulau_timor"
             },
             {   
                 name : "MT SALMON MUSTOFA - SERVICE ALTERNATOR CLASS B", 
-                image : []
+                image : "salmon_mustofa"
             },
             {   
                 name : "MT TIMUR LAUT MAS - CONTROLLABLE PITCH PROPELLER", 
-                image : []
+                image : "timur_laut_mas"
             },
             {   
                 name : "MV HD DOLPHIN - REWENDING ALTERNATOR", 
-                image : []
+                image : "hd_dolphin"
             },
             {   
                 name : "MV KINTOKI - SERVICE TRANSFORMER 380V/220V 80KVA", 
-                image : []
+                image : "kintoki_transformator"
             },
             {   
                 name : "KMP BERLIN NAKROMA - SYNCHRONIZING AE1 & AE2", 
-                image : []
+                image : "berlin_nikroma"
             },
             {   
                 name : "MV KINTOKI - INSTALL INVERTER 380V/440V 300 KW", 
-                image : []
+                image : "kintoki_inverter"
             },
         ]
     },
@@ -76,15 +72,15 @@ const datas = [
         projects : [
             {   
                 name : "RB JAPAN - REPAIR BUTTERFLY VALVE", 
-                image : []
+                image : "rb_japan"
             },
             {   
                 name : "TB MURIA - REPAIR SYSTEM RUDDER", 
-                image : []
+                image : "tb_muria_rudder"
             },
             {   
                 name : "TB MURIA - REPAIR ECHOSOUNDER", 
-                image : []
+                image : "tb_muria_echo"
             }
         ]
     },
@@ -97,8 +93,10 @@ function SideBarProject() {
     setOpen(open === value ? 0 : value);
   };
 
+  const handleClickMenu = () => useState();
+
   return (
-    <Card className="h-[calc(100vh-5rem)] w-80 max-w-[20rem] p-4 shadow-2xl mt-4 fixed top-14 left-1">
+    <Card className="h-[calc(100vh-5rem)] w-80 max-w-[20rem] p-4 shadow-xl mt-4 fixed top-14 left-1">
       <div className="mb-2 p-4">
         <Typography variant="h5" color="blue-gray">
           Projects
@@ -128,7 +126,7 @@ function SideBarProject() {
                     <List className="p-0">
                         {
                             item.projects.map(({name, image}, key) => (
-                                <ListItem key={key}>
+                                <ListItem key={key} onClick={handleClickMenu}>
                                     <ListItemPrefix>
                                     <PlusCircleIcon className="h-3 w-5" />
                                     </ListItemPrefix>

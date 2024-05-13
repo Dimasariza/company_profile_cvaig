@@ -5,8 +5,9 @@ import {
   Collapse,
   Typography,
   IconButton,
+  Button
 } from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, DocumentArrowDownIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import Link from 'next/link';
 
@@ -73,7 +74,7 @@ export function ProjectNavbar() {
   }, []);
  
   return (
-    <Navbar fullWidth className="mx-auto max-w-screen px-6 py-3">
+    <Navbar fullWidth className="mx-auto max-w-screen px-6 py-3 fixed z-50">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
         variant="h6"
@@ -95,6 +96,11 @@ export function ProjectNavbar() {
             <Bars3Icon className="h-6 w-6" strokeWidth={2} />
           )}
         </IconButton>
+        {/* <Link href={"/projects"}> */}
+          <Button variant="gradient" size="sm" className="flex" >
+            <DocumentArrowDownIcon className="h-4 w-4 mr-2"/>Portfolio
+          </Button>
+        {/* </Link> */}
       </div>
     </Navbar>
   );

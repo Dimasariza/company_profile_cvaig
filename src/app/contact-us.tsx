@@ -20,7 +20,8 @@ const FAQS = [
   {
     title: "Whatsapp",
     desc: "0813-2536-7342",
-    icon: <FaWhatsapp size={100} className="m-5"/>
+    icon: <FaWhatsapp size={100} className="m-5"/>,
+    link: "https://api.whatsapp.com/send?phone=6281325367342&text=Halo%20pak%20Alex%2C%20Saya%20ingin%20menanyakan%20informasi%20mengenai%20pengerjaan%20pebaikan%20kapal.%20Terimakasih."
   },
   {
     title: "Email",
@@ -31,7 +32,7 @@ const FAQS = [
 
 export function ContactUs() {
   return (
-    <section className="px-8 py-20">
+    <section className="px-8 py-20" id="contact_us">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
           <Typography variant="h1" color="blue-gray" className="mb-4">
@@ -46,22 +47,24 @@ export function ContactUs() {
         </div>
 
         <div className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          {FAQS.map(({ title, desc, icon }) => (
-            <Card key={title} shadow={false} color="transparent">
-              <CardBody>  
-                <div className="flex justify-center">
-                  {icon}
-                </div>
-                <Typography color="blue-gray" className="pb-6 text-center" variant="h4">
-                  {title}
-                </Typography>
-                <div className="pt-2">
-                  <Typography className="font-normal !text-gray-500 text-center">
-                    {desc}
+          {FAQS.map(({ title, desc, icon, link }) => (
+            <a href={link} target="_blank">
+              <Card key={title} shadow={false} color="transparent">
+                <CardBody>  
+                  <div className="flex justify-center">
+                    {icon}
+                  </div>
+                  <Typography color="blue-gray" className="pb-6 text-center" variant="h4">
+                    {title}
                   </Typography>
-                </div>
-              </CardBody>
-            </Card>
+                  <div className="pt-2">
+                    <Typography className="font-normal !text-gray-500 text-center">
+                      {desc}
+                    </Typography>
+                  </div>
+                </CardBody>
+              </Card>
+            </a>
           ))}
         </div>
       </div>

@@ -51,10 +51,8 @@ export default function ProjectPage() {
   return (
     <>
       <ProjectNavbar />
-      {/* <div className='flex'> */}
-        <SideBarProject /> 
-        <ContentProject image={image} />
-      {/* </div> */}
+      <SideBarProject /> 
+      <ContentProject image={image} />
     </>
   );
 }

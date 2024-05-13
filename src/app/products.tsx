@@ -8,12 +8,12 @@ import Link from 'next/link';
 
 const OPTIONS = [
   {
-    title: "50+",
-    description: "Ship Maintenance",
+    title: "20+",
+    description: "Customize Inverter",
   },
   {
-    title: "100+",
-    description: "Maintenance Projects",
+    title: "50+",
+    description: "Inverter Installation",
   },
   {
     title: "24/7",
@@ -25,7 +25,7 @@ const OPTIONS = [
   },
 ];
 
-export function Projects() {
+export function Products() {
 
   return (
     <section className="py-20 px-8" id="projects">
@@ -44,13 +44,13 @@ export function Projects() {
         </Carousel>
         <div className="col-span-1 mx-auto max-w-lg px-4 lg:px-0">
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            Projects
+            Products
           </Typography>
           <Typography
             variant="lead"
             className="mb-5 px-4 text-left  text-xl !text-gray-500 lg:px-0  "
           >
-            We have experience in handling ship problems.
+            We have experience in manufacturing Inverters for industrial scale projects.
           </Typography>
 
           <div className="col-span-2 grid gap-5 grid-cols-2 ">
@@ -61,15 +61,15 @@ export function Projects() {
             ))}
           </div>
           
-          <Link href={"/projects"}>
-            <Button variant="gradient" className="mx-1">See Projects</Button>
+          <Link href={"/"}>
+            <Button variant="gradient" className="mx-1">See Products</Button>
           </Link>
-          <Link href={"/projects"}>
-            <Button variant="gradient" className="mx-1" color="green">Projects Portfolio</Button>
+          <Link href={"/"}>
+            <Button variant="gradient" className="mx-1" color="green">Products Catalog</Button>
           </Link>
         </div>
       </div>
     </section>
   );
 }
-export default Projects;
+export default Products;

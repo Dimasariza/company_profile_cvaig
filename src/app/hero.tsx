@@ -6,7 +6,7 @@ import ship from "../../public/image/top view.png";
 
 function Hero() {
   return (
-    <div className="relative min-h-screen w-full">
+    <div className="relative min-h-screen w-full" id="home">
       <header className="grid !min-h-[49rem] bg-gray-900 px-8">
         <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
           <div className="col-span-1">
@@ -36,7 +36,7 @@ function Hero() {
         </div>
       </header>
       
-      <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
+      <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md" id="about_us">
         <div>
           <Typography variant="h3" color="blue-gray" className="mb-3">
             About AIG
