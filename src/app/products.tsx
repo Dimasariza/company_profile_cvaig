@@ -28,7 +28,7 @@ const OPTIONS = [
 export function Products() {
 
   return (
-    <section className="py-20 px-8" id="projects">
+    <section className="py-20 px-8" id="products">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
         <Carousel className="rounded-xl" transition={{ duration: 2 }} autoplay loop>
           { 

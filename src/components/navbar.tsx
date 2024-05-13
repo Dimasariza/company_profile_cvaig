@@ -82,6 +82,7 @@ export function Navbar() {
           <NavItem href="#home">Home</NavItem>
           <NavItem href="#about_us">About Us</NavItem>
           <NavItem href="#projects" >Projects</NavItem>
+          <NavItem href="#products" >Products</NavItem>
           <NavItem href="#clients">Clients</NavItem>
           <NavItem href="#contact_us">Contact Us</NavItem>
 
@@ -116,6 +117,7 @@ export function Navbar() {
             <NavItem href="#home">Home</NavItem>
             <NavItem href="#about_us">About Us</NavItem>
             <NavItem href="#projects">Projects</NavItem>
+            <NavItem href="#products">Products</NavItem>
             <NavItem href="#clients">Clients</NavItem>
             <NavItem href="#contact_us">Contact Us</NavItem>
             {/* <NavItem href="https://www.material-tailwind.com/docs/react/installation">
