@@ -32,7 +32,7 @@ export function Products() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
         <Carousel className="rounded-xl" transition={{ duration: 2 }} autoplay loop>
           { 
-            [1,2,3,4,5,6,7,8,9,10].map((image, id) => (
+            [1,2,3].map((image, id) => (
               <img
                 key={id}
                 src={"./products/inverter-" + image + ".jpg"}
