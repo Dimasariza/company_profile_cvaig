@@ -19,9 +19,9 @@ const FAQS = [
   },
   {
     title: "Whatsapp",
-    desc: "0813-2536-7342",
+    desc: "0838-3100-1442",
     icon: <FaWhatsapp size={100} className="m-5"/>,
-    link: "https://api.whatsapp.com/send?phone=6281325367342&text=Halo%20pak%20Alex%2C%20Saya%20ingin%20menanyakan%20informasi%20mengenai%20pengerjaan%20pebaikan%20kapal.%20Terimakasih."
+    link: "https://api.whatsapp.com/send?phone=083831001442&text=Halo%20pak%20Alex%2C%20Saya%20ingin%20menanyakan%20informasi%20mengenai%20pengerjaan%20pebaikan%20kapal.%20Terimakasih."
   },
   {
     title: "Email",
