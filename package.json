@@ -7,8 +7,9 @@
   "homepage": "https://demos.creative-tim.com/nextjs-tailwind-app-presentation-page",
   "scripts": {
     "dev": "next dev & npx next-video sync -w",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && next export",
+    "export": "next export -o testOut",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {

@@ -15,6 +15,7 @@ const nextConfig = {
     PUBLIC_URL: process.env.PUBLIC_URL,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

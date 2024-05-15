@@ -18,8 +18,8 @@ function ContentProject({image} : any) {
         </Typography>
       <div className="grid grid-cols-3 gap-4 justify-items-stretch">
         {
-          image.map((item: any) => (
-            <Card color="transparent" shadow={false} className="w-80 justify-self-center">
+          image.map((item: any, key: number) => (
+            <Card color="transparent" key={key} shadow={false} className="w-80 justify-self-center">
               <CardHeader floated={false} className="h-80">
                 <img
                   src={item}

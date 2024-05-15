@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
-import ship from "../../public/image/top view.png";
 
 function Hero() {
   return (
@@ -28,7 +27,7 @@ function Hero() {
             <Image
               width={900}
               height={100}
-              src={ship}
+              src={`${process.env.PUBLIC_URL}/image/top view.png`}
               alt="team work"
               className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0" 
             />
