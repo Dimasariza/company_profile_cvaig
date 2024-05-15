@@ -35,8 +35,8 @@ export function Products() {
             [1,2,3,4,5,6,7,8,9,10].map((image, id) => (
               <img
                 key={id}
-                src={"./projects/" + image + ".jpg"}
-                alt={"projects" + image}
+                src={"./products/inverter-" + image + ".jpg"}
+                alt={"Products" + image}
                 className="h-full w-full object-cover"
               />
             ))
