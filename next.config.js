@@ -2,6 +2,8 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  reactStrictMode: true,
   webpack(config) {
     config.resolve.extensionAlias = {
         ".js": [".js", ".ts"],
