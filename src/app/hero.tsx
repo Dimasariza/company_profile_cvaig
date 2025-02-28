@@ -27,7 +27,7 @@ function Hero() {
             <img
               width={900}
               height={100}
-              src={`/image/top view.png`}
+              src={`./image/top view.png`}
               alt="team work"
               className="col-span-1 my-20 h-full max-h-[30rem] -translate-y-32 md:max-h-[36rem] lg:my-0 lg:ml-auto lg:max-h-[40rem] lg:translate-y-0" 
             />
