@@ -24,7 +24,7 @@ function Hero() {
             </Typography>
           </div>
           <div className="mb-2">
-            <Image
+            <img
               width={900}
               height={100}
               src={`${process.env.PUBLIC_URL}/image/top view.png`}
