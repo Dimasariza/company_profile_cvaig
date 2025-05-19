@@ -15,7 +15,7 @@ export default function CompanyProfile() {
     <>
       <Navbar />
       <Hero />
-      <VideoIntro />
+{/*       <VideoIntro /> */}
       <Feature />
       <Projects />
       <Products />
